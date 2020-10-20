@@ -42,6 +42,10 @@
   overflow: scroll;
 }
 
+.room-area{
+  
+}
+
 .created-room{
   padding: 20px 0px 40px 0px;
 }
@@ -158,7 +162,7 @@
 }
 
 .submit-btn{
-  fint-size: 16px;
+  font-size: 16px;
   color: white;
   background-color: #38aef0;
   border: none;
