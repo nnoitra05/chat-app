@@ -1,0 +1,15 @@
+<div class="chat">
+  <div class="upper-chat">
+    <div class="chat-user">
+      <%= message.user.name %>
+    </div>
+    <div class="chat-date">
+      <%= l message.created_at %>
+    </div>
+  </div>
+  <div class="lower-chat">
+    <div class="chat-content">
+      <%= message.content %>
+    </div>
+  </div>
+</div>
