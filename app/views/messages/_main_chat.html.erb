@@ -2,7 +2,7 @@
 
 <div class="main-chat-header">
   <div class="current-room">
-    hogefuga
+    <%= @room.name %>
   </div>
   <div class="exit-chat">
     <a href="#">チャットを終了する</a>
@@ -10,36 +10,7 @@
 </div>
 
 <div class="main-chat-area">
-  <div class="chat">
-    <div class="upper-chat">
-      <div class="chat-user">
-        Tom
-      </div>
-      <div class="chat-date">
-        2020/3/31(Wed) 12:43:30
-      </div>
-    </div>
-    <div class="lower-chat">
-      <div class="chat-content">
-        おはよう
-      </div>
-    </div>
-  </div>
-  <div class="chat">
-    <div class="upper-chat">
-      <div class="chat-user">
-        Tom
-      </div>
-      <div class="chat-date">
-        2020/3/31(Wed) 12:47:30
-      </div>
-    </div>
-    <div class="lower-chat">
-      <div class="chat-content">
-        こんばんは
-      </div>
-    </div>
-  </div>
+  <%= render partial: "message", collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: "main-chat-message", local: true do |f| %>
